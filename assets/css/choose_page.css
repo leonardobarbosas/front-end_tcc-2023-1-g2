@@ -8,7 +8,13 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     background-color: var(--main-yellow);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 95%;
+    height: 95%;
 }
 
 header {
@@ -30,18 +36,51 @@ header {
     background: none;
     border: none;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 main {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10rem;
+}
+
+.text_container {
+    width: 70%;
+    text-align: center;
 }
 
 .choose_text {
     color: var(--text-color);
     font-size: 5rem;
     font-weight: 500;
+}
+
+.buttons_container {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: var(--main-yellow);
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: .5rem 3.5rem;
+    border-radius: 10px;
+    box-shadow: 10px 8px 0 1px black;
+    transition: .2s;
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateX(10px);
+    transform: translateY(5px);
 }
