@@ -110,7 +110,7 @@ main{
 
 .entry-text {
     color: var(--text-color);
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     width: 40%;
     text-align: center;
