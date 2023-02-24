@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, white 0, white 50%, var(--main-yellow) 50%);
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    padding-left: 20px;
+    width: 100vw;
+    height: 5vh;
+}
+
+.logo{
+    position: fixed;
+}
+
+.side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.right-side {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 15vh;
+}
+
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 4rem 4rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    background: var(--main-yellow);
+}
+
+.form-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.placeholder {
+    font-weight: 600;
+}
+
+.input {
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem;
+    width: 30rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    outline: none;
+}
+
+.button-next {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: var(--main-yellow);
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: .5rem 3.5rem;
+    border-radius: 10px;
+    box-shadow: 10px 8px 0 1px black;
+    transition: .2s;
+}
+
+.button-next:active {
+    box-shadow: none;
+    transform: translateX(10px);
+    transform: translateY(5px);
+}
+
+.entry-text {
+    color: var(--text-color);
+    font-size: 4rem;
+    font-weight: 600;
+    width: 40%;
+    text-align: center;
+}
+
+.google-register {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: .5rem 5rem;
+    border-radius: 10px;
+}
+
+i {
+    margin-right: 4rem;
+}
+
+.bottom-text {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.bold-text {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
