@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--main-yellow);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 7rem;
+}
+
+.logo_container {
+    display: flex;
+}
+
+.logo {
+    width: 14rem;
+}
+
+.header_button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose_text {
+    color: var(--text-color);
+    font-size: 5rem;
+    font-weight: 500;
+}
