@@ -6,12 +6,13 @@ const pictureImageTxt = ""
 const icon = document.getElementById("camera-icon")
 pictureImage.innerHTML = pictureImageTxt
 
+let photo
 inputFile.addEventListener("change", function (e) {
     const inputTarget = e.target
-    const file = inputTarget.files[0]
+    photo = inputTarget.files[0]
 
-    if (file) {
-            const reader = new FileReader()
+    if (photo) {
+        const reader = new FileReader()
 
         reader.addEventListener("load", function (e) {
             const readerTarget = e.target
@@ -25,11 +26,43 @@ inputFile.addEventListener("change", function (e) {
             pictureImage.appendChild(img)
         })
 
-        reader.readAsDataURL(file)
+        reader.readAsDataURL(photo)
     } else {
         icon.style.display = "block"
-        pictureImage.innerHTML = pictureImageTxt;
+        pictureImage.innerHTML = pictureImageTxt
     }
 })
 
+import { postDriver } from './fetchs/driverFetch.js'
 
+let jsonInfoDriver
+const buttonForm = document.getElementById('button_form')
+buttonForm.addEventListener("click", async (e) => {
+    const name = localStorage.getItem('name')
+    const email = localStorage.getItem('email')
+    const password = localStorage.getItem('password')
+    const rg = document.getElementById('inputRG').value
+    const cpf = document.getElementById('inputCpf').value
+    const phone = document.getElementById('inputTelephone').value
+    const birthDate = document.getElementById('inputBirthDate').value
+    const cnh = document.getElementById('inputCnh').value
+    const startCareer = document.getElementById('inputStartDate').value
+
+    jsonInfoDriver = {
+        nome: name,
+        email: email,
+        rg: rg,
+        cpf: cpf,
+        cnh: cnh,
+        telefone: phone,
+        data_nascimento: birthDate,
+        inicio_carreira: startCareer,
+        senha: password
+        // foto: url,
+        // avaliacao: 0,
+        // descricao: descricao
+    }
+
+    const uploadDriver = await postDriver(jsonInfoDriver)
+    console.log(uploadDriver)
+})
