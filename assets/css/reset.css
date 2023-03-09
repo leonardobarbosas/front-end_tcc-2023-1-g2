@@ -12,9 +12,13 @@ ul {
     list-style: none;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 :root {

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/driver_complement_page.css">
+    <script src="../assets/js/driver_complement_page.js" defer type="module"></script>
+    <script src="https://kit.fontawesome.com/2bbeedebb6.js" crossorigin="anonymous"></script>
+    <title>Dados-adicionais</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="logo_container" href="../index.html">
+                <img class="logo" src="../assets/img/logo-light.svg" alt="Logo da Vanbora">
+            </a>
+            <button id="go_back_button" class="header_button" type="button">Voltar</button>
+        </header>
+
+        <main>
+            <form class="register_form">
+                <div class="input_picture_container">
+                    <span>Foto de perfil: </span>
+                    <label class="picture" for="picture__input" tabIndex="0">
+                        <i class="fa fa-camera"id="camera-icon"></i>
+                        <span class="picture__image"></i></span>
+                      </label>
+                      
+                      <input type="file" name="picture__input" id="picture__input">
+                </div>
+
+                <div class="container_four_inputs">
+                    <div class="rg_cpf_container">
+                        <div class="input_container">
+                            <label for="inputRG" class="placeholder">RG:</label>
+                            <input class="input" type="text" id="inputRG" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="inputCpf" class="placeholder">CPF:</label>
+                            <input class="input" type="text" id="inputCpf" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="inputTelephone" class="placeholder">Telefone:</label>
+                            <input class="input" type="tel" id="inputTelephone" required>
+                        </div>
+                    </div>
+
+                    <div class="nasc_cep_container">
+                        <div class="input_container">
+                            <label for="inputBirthDate" class="placeholder">Data nascimento:</label>
+                            <input class="input" type="date" id="inputBirthDate" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="inputCep" class="placeholder">CEP:</label>
+                            <input class="input" type="text" id="inputCep" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="inputStartDate" class="placeholder">Data de inicio de carreira:</label>
+                            <input class="input" type="date" id="inputStartDate" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button_container">
+                    <button id="button_form" class="button_save" type="button">Salvar</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
