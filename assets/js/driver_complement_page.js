@@ -34,10 +34,11 @@ inputFile.addEventListener("change", function (e) {
 })
 
 import { postDriver } from './fetchs/driverFetch.js'
+import { uploadImage } from './firebase.js'
 
 let jsonInfoDriver
 const buttonForm = document.getElementById('button_form')
-buttonForm.addEventListener("click", async (e) => {
+buttonForm.addEventListener("click", async () => {
     const name = localStorage.getItem('name')
     const email = localStorage.getItem('email')
     const password = localStorage.getItem('password')
@@ -48,6 +49,12 @@ buttonForm.addEventListener("click", async (e) => {
     const cnh = document.getElementById('inputCnh').value
     const startCareer = document.getElementById('inputStartDate').value
 
+    const productPhoto = document.getElementById('picture__input').files[0]
+    const nameImage = document.getElementById('picture__input').files[0].name
+    const nameFile = nameImage.replace(' ','-').toLowerCase()
+    const urlImage =  await uploadImage(productPhoto, nameFile)
+    console.log(urlImage)
+
     jsonInfoDriver = {
         nome: name,
         email: email,
@@ -57,12 +64,13 @@ buttonForm.addEventListener("click", async (e) => {
         telefone: phone,
         data_nascimento: birthDate,
         inicio_carreira: startCareer,
-        senha: password
-        // foto: url,
+        senha: password,
+        // foto: urlImage,
         // avaliacao: 0,
         // descricao: descricao
     }
 
-    const uploadDriver = await postDriver(jsonInfoDriver)
-    console.log(uploadDriver)
+    // const uploadDriver = await postDriver(jsonInfoDriver)
+    // console.log(uploadDriver)
+
 })
