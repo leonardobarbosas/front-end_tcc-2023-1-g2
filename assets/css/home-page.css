@@ -1,0 +1,30 @@
+body{
+    background: rgba(0, 0, 0, 0.2);
+    background-image: url(../img/busbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    height: 10vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name_logo_container{
+    color: white;
+}
+
+.text-container{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 2vw;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
