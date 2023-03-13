@@ -1,8 +1,17 @@
+@import url(./reset.css);
+
 body{
-    background: rgba(0, 0, 0, 0.2);
-    background-image: url(../img/busbackground.png);
+    background-color: #FFFCF2;
+;
+}
+
+
+.background{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.195), rgba(0, 0, 0, 0.166), rgba(0, 0, 0, 0)), url(../img/busbackground.png);
     background-repeat: no-repeat;
     background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    height: 100vh;
 }
 
 header{
@@ -28,3 +37,74 @@ header{
     font-weight: bold;
 }
 
+.vanbora-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 70vh;
+}
+
+.vanbora-title{
+    display: flex;
+}
+
+#vanbora-title{
+    font-size: 10rem;
+    font-family: 'Mansalva', cursive;
+}
+
+.vanbora-title1{
+    color: #E0B441;
+}
+
+.vanbora-title2{
+    color: white;
+}
+
+.vanbora-subtitle-mensage{
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+@media (max-width: 865px){
+
+    #vanbora-title{
+        font-size: 5rem;
+        font-family: 'Mansalva', cursive;
+    }
+    .vanbora-subtitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .vanbora-subtitle-mensage{
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .text-container{
+        background-color: #000;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+        font-size:  2.5rem;
+        font-weight: 300;
+        gap: 65px;
+        transform: translate(100%);
+        transition: all 1s;
+    }
+    .menu-burguer-container.show ~ .text-container{
+        transform: translate(0);
+    }
+}
