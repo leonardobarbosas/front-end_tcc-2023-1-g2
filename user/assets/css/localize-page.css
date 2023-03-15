@@ -38,17 +38,40 @@
 footer{
     background-color: #FFDE72;
     display: flex;
+    justify-content: space-around;
+    height: 25vh;
+}
+
+.social{
+    width: 15vw;
+    align-items: center;
 }
 
 #wie-container{
     display: flex;
     align-items: center;
+    font-size: 1.3rem;
 }
 
 .contact{
     font-size: 3rem;
 }
 
+.copyright-container{
+    display: flex;
+    align-items: flex-end;
+}
+
 .copy{
     font-size: 2rem;
+}
+
+.address-container{
+    display: flex;
+    width: 15vw;
+    align-items: center;
+}
+
+.address{
+    font-size: 1.3rem;
 }
