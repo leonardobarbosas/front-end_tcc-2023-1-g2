@@ -1,3 +1,7 @@
+@import url(./reset.css);
+
+/*main-container*/
+
 .container {
     display: flex;
     flex-direction: column;
@@ -6,29 +10,34 @@
     border-radius: 15px;
     width: 95%;
     height: 95%;
-}
-
-body {
+  }
+  
+  /*body*/
+  
+  body {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     width: 100vw;
     height: 100vh;
-}
-
-.logo_container {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 0.03;
   }
+  
+  /*header*/
   
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px;
+    padding: 50px;  
+  
   }
+
+  .logo_container{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0.05;
+}
   
   .header_button {
     background: none;
@@ -41,29 +50,30 @@ body {
     font-size: 2rem;
     font-weight: 500;
   }
-
-button {
+   button{
     flex-grow: 0.1;
-}
-
-main {
+   }
+  
+  /*main*/
+  
+  main {
     flex-grow: 1;
-}
+  }
 
-.register_form {
+  
+  .register_form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
     width: 100%;
-}
-
-#picture__input {
+  }
+  #picture__input {
     display: none;
-}
-
-.picture {
+  }
+  
+  .picture {
     width: 400px;
     aspect-ratio: 16/9;
     background: #eee;
@@ -77,42 +87,38 @@ main {
     transition: color 300ms ease-in-out 300ms ease-in-out;
     outline: none;
     overflow: hidden;
-}
-
-i.fa-camera {
+  }
+  i.fa-camera {
     margin: 10px;
     cursor: pointer;
     font-size: 7rem;
     color: black;
-}
-
-.picture:focus {
+  
+  }
+  
+  .picture:focus {
     background: #eee;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.picture__img {
+  }
+  
+  .picture__img {
     max-width: 100%;
-}
-
-.input_picture_container {
-    margin-bottom: 1.5rem;
-}
-
-.input_container,
-label {
+  }
+  .input_container,
+  label {
     display: flex;
     flex-direction: column;
-}
-
-.container_four_inputs {
+  }
+  
+  .container_four_inputs {
     display: flex;
     align-items: center;
     gap: 3rem;
     margin-bottom: 1.2rem;
-}
-
-input {
+    margin-top: 2rem;
+  }
+  
+  input {
     border: none;
     border-radius: 10px;
     padding: 1.5rem 1.5rem;
@@ -120,9 +126,9 @@ input {
     font-size: 1.5rem;
     font-weight: 300;
     outline: none;
-}
-
-.button_save {
+  }
+  
+  .button_save {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -133,15 +139,19 @@ input {
     border-radius: 10px;
     box-shadow: 10px 8px 0 1px black;
     transition: 0.2s;
-}
-
-.button_save:active {
+  }
+  
+  .button_save:active {
     box-shadow: none;
     transform: translateX(10px);
     transform: translateY(5px);
-}
-
-.button_container {
+  }
+  
+  .button_container{
     display: flex;
-    padding-top: 20px;
-}
+    padding-top: 30px;
+  }
+
+
+
+  

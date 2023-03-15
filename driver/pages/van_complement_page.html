@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/van_complemet_page.css">
+    <script src="https://kit.fontawesome.com/2bbeedebb6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'">
+    <script src="./Assets/js/picture.js" defer type="module"></script>
+    <title>Dados adicionais Van</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <a class="logo_container" href="../index.html">
+                <div class="logo-content">
+                    <div class="ball">
+                        <span class="material-symbols-outlined">
+                            airport_shuttle
+                        </span>
+                    </div>
+                    <div class="name_logo_container">
+                        <span class="name">Vanbora</span>
+                    </div>
+                </div>
+            </a>
+            <button id="go_back_button" class="header_button" type="button">Voltar</button>
+        </header>
+
+
+        <main>
+            <div class="input_picture_container">
+                <div class="container-title-photo">
+                    <span>Foto da van: </span>
+                    <label class="picture" for="picture__input" tabIndex="0">
+                        <i class="fa fa-camera" id="camera-icon"></i>
+                        <span class="picture__image"></i></span>
+                    </label>
+
+                    <input type="file" name="picture__input" id="picture__input">
+                </div>
+            </div>
+
+            <div class="sla">
+                <div class="container_inputs">
+                    <div class="input_container">
+                        <label for="number" class="placeholder">Numero de vagas:</label>
+                        <input class="input" type="text" id="inputBirthDate" required>
+                    </div>
+                    <div class="input_container">
+                        <label for="text" class="placeholder">Placa da Van:</label>
+                        <input class="input" type="text" id="inputCep" required>
+                    </div>
+                    <div class="input_container">
+                        <label for="text" class="placeholder">Modelo da van:</label>
+                        <input class="input" type="text" id="inputStartDate" required>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </main>
+
+        <div class="bottom_part">
+            <div class="button_container">
+                <button id="button_form" class="button_save" type="button">Salvar</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
