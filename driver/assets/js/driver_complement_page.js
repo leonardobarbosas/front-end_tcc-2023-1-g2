@@ -1,12 +1,20 @@
 'use strict'
 
+//Imports
+import {uploadImage} from '../../../firebase/firebaseStorageImage.js'
+import { postDriver } from './fetchs/driverFetch.js'
+
 const inputFile = document.getElementById("picture__input")
+
 const pictureImage = document.querySelector(".picture__image")
+
 const pictureImageTxt = ""
-const icon = document.getElementById("camera-icon")
 pictureImage.innerHTML = pictureImageTxt
 
+const icon = document.getElementById("camera-icon")
+
 let photo
+
 inputFile.addEventListener("change", function (e) {
     const inputTarget = e.target
     photo = inputTarget.files[0]
@@ -33,15 +41,13 @@ inputFile.addEventListener("change", function (e) {
     }
 })
 
-import { postDriver } from './fetchs/driverFetch.js'
-import { uploadImage } from './firebase.js'
 
 let jsonInfoDriver
 const buttonForm = document.getElementById('button_form')
 buttonForm.addEventListener("click", async () => {
     const name = localStorage.getItem('name')
     const email = localStorage.getItem('email')
-    const password = localStorage.getItem('password')
+    const password = localStorage.getItem('password') // UID usuário
     const rg = document.getElementById('inputRG').value
     const cpf = document.getElementById('inputCpf').value
     const phone = document.getElementById('inputTelephone').value
@@ -53,24 +59,28 @@ buttonForm.addEventListener("click", async () => {
     const nameImage = document.getElementById('picture__input').files[0].name
     const nameFile = nameImage.replace(' ','-').toLowerCase()
     const urlImage =  await uploadImage(productPhoto, nameFile)
-    console.log(urlImage)
+    const photo= {
+        name: nameImage,
+        url: urlImage
+    }
+    console.log(photo.url)
 
     jsonInfoDriver = {
-        nome: name,
-        email: email,
+        nome: "leonardo",
+        email: "leo@gmail.com",
         rg: rg,
         cpf: cpf,
         cnh: cnh,
         telefone: phone,
         data_nascimento: birthDate,
         inicio_carreira: startCareer,
-        senha: password,
-        // foto: urlImage,
-        // avaliacao: 0,
-        // descricao: descricao
+        senha: "pegadinhadomalandro",
+        foto: photo.url,
+        avaliacao: 0,
+        descricao: "meu nome é leo"
     }
 
-    // const uploadDriver = await postDriver(jsonInfoDriver)
-    // console.log(uploadDriver)
+    const uploadDriver = await postDriver(jsonInfoDriver)
+    console.log(uploadDriver)
 
 })
