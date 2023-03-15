@@ -1,0 +1,77 @@
+.vanbora-title4{
+    color: #E0B441;
+}
+
+.vanbora-title3{
+    color: white;
+}
+
+.circle-container{
+    background-color: #E0B441;  
+    clip-path: ellipse(60% 1450px at 0);
+    z-index: -1;
+}
+
+
+.localize-container{
+    display: flex;
+    justify-content: center;
+}
+
+.localize-title{
+    display: flex;
+    z-index: 100;
+}
+
+.localization-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: #FFDE72;
+    display: flex;
+    justify-content: space-around;
+    height: 25vh;
+}
+
+.social{
+    width: 15vw;
+    align-items: center;
+}
+
+#wie-container{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.contact{
+    font-size: 3rem;
+}
+
+.copyright-container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.copy{
+    font-size: 2rem;
+}
+
+.address-container{
+    display: flex;
+    width: 15vw;
+    align-items: center;
+}
+
+.address{
+    font-size: 1.3rem;
+}
