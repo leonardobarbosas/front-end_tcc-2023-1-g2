@@ -34,3 +34,21 @@
     justify-content: center;
     align-items: center;
 }
+
+footer{
+    background-color: #FFDE72;
+    display: flex;
+}
+
+#wie-container{
+    display: flex;
+    align-items: center;
+}
+
+.contact{
+    font-size: 3rem;
+}
+
+.copy{
+    font-size: 2rem;
+}
