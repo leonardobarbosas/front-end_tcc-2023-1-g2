@@ -6,12 +6,31 @@
     color: white;
 }
 
-.bola{
+.circle-container{
     background-color: #E0B441;  
     clip-path: ellipse(60% 1450px at 0);
+    z-index: -1;
 }
 
-.bola2{
-    background-color: #E0B441;  
-    clip-path: ellipse(60% 1450px at 0);
+
+.localize-container{
+    display: flex;
+    justify-content: center;
+}
+
+.localize-title{
+    display: flex;
+    z-index: 100;
+}
+
+.localization-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
