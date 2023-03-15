@@ -1,7 +1,7 @@
 'use strict'
 
 //Imports
-import {uploadImage} from '../../../firebase/firebase.js'
+import {uploadImage} from '../../../firebase/firebaseStorageImage.js'
 import { postDriver } from './fetchs/driverFetch.js'
 
 const inputFile = document.getElementById("picture__input")
@@ -47,7 +47,7 @@ const buttonForm = document.getElementById('button_form')
 buttonForm.addEventListener("click", async () => {
     const name = localStorage.getItem('name')
     const email = localStorage.getItem('email')
-    const password = localStorage.getItem('password')
+    const password = localStorage.getItem('password') // UID usuário
     const rg = document.getElementById('inputRG').value
     const cpf = document.getElementById('inputCpf').value
     const phone = document.getElementById('inputTelephone').value

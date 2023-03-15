@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app"
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js"
 
 const firebaseConfig = {
   apiKey: "AIzaSyAyq2Pj9DL6tHROKTrjdIloKpV8EoS4x8s",
@@ -13,24 +13,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig)
 
-
-
-
-
-import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage"
-
-const uploadImage = async (image, name) => {
-  const storage = getStorage(app)
-
-  const mountainsRef = ref(storage, `teste/${name}.jpg`)
-
-  await uploadBytes(mountainsRef, image)
-
-  return await getDownloadURL(mountainsRef)
-}
-
-
-
-export {
-  uploadImage
+export{
+    app
 }
