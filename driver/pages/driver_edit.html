@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/driver_edit.css" />
-    <link rel="stylesheet" href="./assets/css/reset.css">
     <script src="./assets/js/pictureArea.js" defer type="module"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -16,8 +15,11 @@
 </head>
 
 <body>
+    <div class="test-container">
+        
+    </div>
     <div class="container">
-        <header>
+        <header class="header-test" id="header-test">
             <a class="logo_container" href="../index.html">
                 <div class="logo-content">
                     <div class="ball">
@@ -30,7 +32,7 @@
                     </div>
                 </div>
             </a>
-            <button id="go_back_button" class="header_button" type="button">Voltar</button>
+
         </header>
         <main>
             <form class="register_form">
@@ -119,6 +121,23 @@
         </main>
 
     </div>
+    <!-- <script>
+        const containerTest = document.querySelector('.test-container')
+        const header = document.querySelector('#header-test')
+
+        console.log(header)
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth < 414) {
+
+                // VOCE VAI TER Q APAGAR O HEADER 
+                // DEPOIS CRIAR ELE NO CONTAINER TEST
+
+                header.remove()
+                containerTest.appendChild(header)
+            }
+        })
+    </script> -->
 </body>
 
 </html>
