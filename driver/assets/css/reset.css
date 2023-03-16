@@ -61,3 +61,8 @@ button {
 .material-symbols-outlined{
     color: white;
 }
+
+/*responsive form*/
+.header_responsive_container{
+    width: 100%;
+}
