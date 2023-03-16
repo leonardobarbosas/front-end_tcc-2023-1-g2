@@ -1,6 +1,5 @@
 'use strict'
-
-/* import { getEmail, getName, getUidPassword} from "../../firebase/firebaseGoogleLoginRegister.js" */
+import { getInfosUser } from "../../firebase/firebaseGoogleLoginRegister.js"
 
 const buttonForm = document.getElementById('button_form')
 
@@ -18,15 +17,15 @@ buttonForm.addEventListener('click', () => {
 })
 
 const buttonGoogleRegister = document.getElementById('button-register-google')
-/* 
-let nome
-let email
-let senha
 
 buttonGoogleRegister.addEventListener('click', async() => {
-    nome = await getName()
-    email = await getEmail()
-    senha = await getUidPassword()
+    
+    const user = await getInfosUser()
+
+    if (user){
+        console.log(user)
+    }
+
 })
 
- */
+
