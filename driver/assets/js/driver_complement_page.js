@@ -45,9 +45,6 @@ inputFile.addEventListener("change", function (e) {
 let jsonInfoDriver
 const buttonForm = document.getElementById('button_form')
 buttonForm.addEventListener("click", async () => {
-    const name = localStorage.getItem('name')
-    const email = localStorage.getItem('email')
-    const password = localStorage.getItem('password') // UID usuário
     const rg = document.getElementById('inputRG').value
     const cpf = document.getElementById('inputCpf').value
     const phone = document.getElementById('inputTelephone').value
