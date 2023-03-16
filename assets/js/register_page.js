@@ -1,4 +1,5 @@
 'use strict'
+import { getInfosUser } from "../../firebase/firebaseGoogleLoginRegister.js"
 
 const buttonForm = document.getElementById('button_form')
 
@@ -14,3 +15,17 @@ buttonForm.addEventListener('click', () => {
     const url = 'http://127.0.0.1:5500/pages/choose_page.html'
     document.location.href = url
 })
+
+const buttonGoogleRegister = document.getElementById('button-register-google')
+
+buttonGoogleRegister.addEventListener('click', async() => {
+    
+    const user = await getInfosUser()
+
+    if (user){
+        console.log(user)
+    }
+
+})
+
+
