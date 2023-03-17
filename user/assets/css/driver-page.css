@@ -1,0 +1,39 @@
+.drivers-container{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#select-filter-container{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(33, 33, 33, 0.25);
+    border-radius: 35px;
+    border: 0;
+    text-decoration: none;
+    height: 70px;
+    width: 200px;
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.filter-container{
+    display: flex;
+}
+
+#input-driver{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(33, 33, 33, 0.25);
+    border-radius: 35px;
+    border: 0;
+    text-decoration: none;
+    height: 70px;
+    width: 600px;
+    padding-left: 70px;
+    font-size: 1rem;
+}
