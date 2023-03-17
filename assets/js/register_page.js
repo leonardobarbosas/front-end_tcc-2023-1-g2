@@ -22,10 +22,7 @@ buttonGoogleRegister.addEventListener('click', async() => {
     
     const user = await getInfosUser()
 
-    if (user){
-        console.log(user)
-    }
+    window.location.href = "./choose_page.html"
 
 })
-
 
