@@ -2,9 +2,7 @@
 
 body{
     background-color: #FFFCF2;
-;
 }
-
 
 .background{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.195), rgba(0, 0, 0, 0.166), rgba(0, 0, 0, 0)), url(../img/busbackground.png);

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../user/assets/css/home-page.css">
     <link rel="stylesheet" href="../assets/css/menuburger.css">
     <link rel="stylesheet" href="./assets/css/localize-page.css">
+    <link rel="stylesheet" href="./assets/css/driver-page.css">
     <script src="../assets/js/main.js" defer></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -67,43 +68,65 @@
                     <p class="vanbora-title2" id="vanbora-title">bora</p>
                 </div>
                 <div class="vanbora-subtitle">
-                    <p class="vanbora-subtitle-mensage">O seu tra   nsporte escolar aqui e agora!</p>
+                    <p class="vanbora-subtitle-mensage">O seu tra nsporte escolar aqui e agora!</p>
                 </div>
             </div>
     </div>
 
 
     <div class="circle-container">
-
-        <div class="localize-container">
-            <div class="localize-title">
-                <p class="vanbora-title3" id="vanbora-title">Localize</p>
-                <p class="vanbora-title4" id="vanbora-title">-se</p>
-            </div>
-        </div>
-        <div class="localization-container">
-            <div class="input-container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <input type="text">
-                <div class="input">
-                    <input type="text">
-                    <input type="text">
+        <div class="circle-rotate">
+            <div class="localize-container">
+                <div class="localize-title">
+                    <p class="vanbora-title3" id="vanbora-title">Localize-se</p>
                 </div>
             </div>
-            <div class="maps-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1081805024396!2d-46.90016434836597!3d-23.528611184624282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0154039cb55b%3A0xadf34a919f156950!2sSENAI%20de%20Jandira%20-%20Professor%20Vicente%20Amato!5e0!3m2!1spt-BR!2sbr!4v1678877313542!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="localization-container">
+                <div class="input-container">
+                    <p class="input-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+                    <div class="input-image">
+                        <label for="search-input" class="search-icon"></label>
+                        <input type="text" class="" id="input" placeholder="Insira seu CEP">
+                    </div>
+                    <div class="input">
+                        <div class="input-image">
+                            <label for="search-input" class="search-icon"></label>
+                            <input type="text" class="" id="input" placeholder="Número da casa">
+                        </div>
+                        <div class="input-image">
+                            <label for="search-input" class="search-icon"></label>
+                            <input type="text" class="" id="input" placeholder="Complementos">
+                        </div>
+                    </div>
+                </div>
+                <div class="maps-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1081805024396!2d-46.90016434836597!3d-23.528611184624282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0154039cb55b%3A0xadf34a919f156950!2sSENAI%20de%20Jandira%20-%20Professor%20Vicente%20Amato!5e0!3m2!1spt-BR!2sbr!4v1678877313542!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="drivers-containers">
+    <div class="drivers-container">
         <p class="vanbora-title4" id="vanbora-title">Motoristas</p>
         <div class="filter-container">
-            <input type="text" class="input-filter">
-            <select name="FILTROS" id="select-filter-container">
-                <option value=""><p></p></option>
-                <option value=""><p>Leo</p></option>
-                <option value=""><p>Arthur</p></option>
+            <div class="input-image">
+                <label for="search-input" class="search-icon"></label>
+                <input type="text" class="input-filter" id="input-driver" placeholder="Buscar">
+            </div>
+            <select name="filtros" id="select-filter-container">
+                <option value="">
+                    <p>Filtros</p>
+                </option>
+                <option value="">
+                    <p>Filtro 1</p>
+                </option>
+                <option value="">
+                    <p>Filtro 2</p>
+                </option>
             </select>
         </div>
     </div>
@@ -118,14 +141,14 @@
                     <img src="./assets/img/WhatsApp.png" alt="">
                     <p>WhatsApp</p>
                 </div>
-            </div>
-            <div id="wie-container">
-                <img src="./assets/img/Instagram.png" alt="">
-                <p>Instagram</p>
-            </div>
-            <div id="wie-container">
-                <img src="./assets/img/Email.png" alt="">
-                <p>Email</p>
+                <div id="wie-container">
+                    <img src="./assets/img/Instagram.png" alt="">
+                    <p>Instagram</p>
+                </div>
+                <div id="wie-container">
+                    <img src="./assets/img/Email.png" alt="">
+                    <p>Email</p>
+                </div>
             </div>
         </div>
         <div class="copyright-container">
