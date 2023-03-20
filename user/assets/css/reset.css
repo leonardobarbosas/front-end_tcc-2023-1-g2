@@ -24,6 +24,13 @@ button {
     --text-color: #232323;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+
 /*Logo css*/
 .ball{
     background-color: #F9AB03;
