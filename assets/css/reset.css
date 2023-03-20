@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +27,7 @@ button {
 }
 
 /*Logo css*/
-.ball{
+.ball {
     background-color: #F9AB03;
     display: flex;
     align-items: center;
@@ -37,25 +39,25 @@ button {
 
 
 
-.logo-content{
+.logo-content {
     display: flex;
     justify-content: center;
 }
 
-.name_logo_container{
+.name_logo_container {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding-left:5px;
-    
+    padding-left: 5px;
+
 }
 
-.name{
-    font-family: 'Poppins';  
+.name {
+    font-family: 'Poppins';
     font-weight: 700;
     font-size: x-large;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
     color: white;
 }
