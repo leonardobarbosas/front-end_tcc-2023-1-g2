@@ -152,6 +152,29 @@
     padding-top: 30px;
   }
 
+  @media (max-width:414px) {
+    .container{
+      height: 100%;
+    }
+    .picture{
+      height: 7rem;
+      width: 10rem;
+    }
+    header{
+      padding-left:20px;
+    }
+    .input{
+      height: 1rem;
+      width: 20rem;
+    }
+    .container_four_inputs{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+  }
+
 
 
   

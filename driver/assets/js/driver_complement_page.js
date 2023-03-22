@@ -1,7 +1,7 @@
 'use strict'
 
 //Imports
-import {uploadImage} from '../../../firebase/firebaseStorageImage.js'
+import { uploadImage } from '../../../firebase/firebaseStorageImage.js'
 import { postDriver } from './fetchs/driverFetch.js'
 
 const inputFile = document.getElementById("picture__input")
@@ -54,9 +54,9 @@ buttonForm.addEventListener("click", async () => {
 
     const productPhoto = document.getElementById('picture__input').files[0]
     const nameImage = document.getElementById('picture__input').files[0].name
-    const nameFile = nameImage.replace(' ','-').toLowerCase()
-    const urlImage =  await uploadImage(productPhoto, nameFile)
-    const photo= {
+    const nameFile = nameImage.replace(' ', '-').toLowerCase()
+    const urlImage = await uploadImage(productPhoto, nameFile)
+    const photo = {
         name: nameImage,
         url: urlImage
     }
