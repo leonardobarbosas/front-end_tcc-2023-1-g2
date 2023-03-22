@@ -22,6 +22,7 @@ button {
 :root {
     --main-yellow: #E0B441;
     --text-color: #232323;
+    --contract-yellow:#FFDD7B;
 }
 
 select {
