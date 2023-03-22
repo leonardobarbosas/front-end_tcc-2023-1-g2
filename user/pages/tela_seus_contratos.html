@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/tela_seus_contratos.css">
-    <title>Seus contratos</title>
+    <script src="https://kit.fontawesome.com/2bbeedebb6.js" crossorigin="anonymous"></script>
+    <title>Seus Contratos</title>
 </head>
+
 <body>
     <div class="container">
-        
+        <header>
+            <a class="go_back_button_container" href="../index.html">
+                <button id="go_back_button" class="header_button" type="button">
+                    <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                    Voltar
+                </button>
+            </a>
+        </header>
+
+        <main>
+            <span class="main_title">Seus Contratos</span>
+
+            <div class="contract_container">
+                <div class="img_container">
+                    <img src="../assets/img/person_image.png" alt="Imagem de uma pessoa sorrindo">
+                </div>
+                <div class="left_info">
+                    <span class="nome">Maria Judite Souza</span>
+                    <span class="tipo_contrato">Tipo de Contrato: Volta</span>
+                    <span class="escola">Escola do Aluno: Sesi - Jandira</span>
+                    <span class="dependente">Dependente: Arthur Augusto</span>
+                </div>
+                <div class="right_info">
+                    <span class="endereco">Moradia: Rua espada, n 133, 06694-390, Itapevi - Jardim São Carlos</span>
+                </div>
+                <div class="cancel_button"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+        </main>
     </div>
 </body>
+
 </html>
