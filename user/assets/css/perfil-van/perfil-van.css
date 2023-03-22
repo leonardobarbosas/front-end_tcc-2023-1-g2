@@ -31,7 +31,6 @@ main{
   align-items: center;
   width: 100%;
   gap: 40px;
-  background-color: pink;
 }
 
 .slide-dados{
@@ -40,7 +39,6 @@ main{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: aqua;
   padding: 30px;
 }
 
@@ -48,12 +46,10 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: bisque;
   width: 100%;
 }
 
 .div-dados-button{
-  background-color: red;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -62,7 +58,35 @@ main{
 }
 
 .div-dados-contact-driver{
-  background-color: blue;
+  background-color: var(--contract-yellow);
+  position: relative;
   display: flex;
-  justify-content: space-around;
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.496);
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.buttons-about-contract{
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-about-me, .button-contract-me{
+  position: relative;
+  border: none;
+  top: -10px;
+  height: 8vh;
+  width: 150px;
+  background: #FFDD7B;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  font-size: 1.2rem;
+}
+.button-about-me:hover, .button-contract-me:hover{
+  transform: scale(1.03);
 }
