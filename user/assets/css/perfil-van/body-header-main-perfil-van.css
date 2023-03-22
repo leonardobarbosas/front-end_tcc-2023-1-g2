@@ -1,0 +1,27 @@
+@import url(../reset.css);
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-perfil-van);
+  gap: 20px;
+}
+
+header{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  padding: 30px;
+}
+
+header i{
+  font-size: 3rem;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
