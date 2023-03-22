@@ -210,12 +210,85 @@
       width: 10rem;
     }
     .input{
-      width: 23rem;
+      width: 20rem;
       height: 4rem;
     }
     .password_and_confirm_password_container{
       display: flex;
+      gap: 1rem;
       flex-direction: column;
     }
-    
+    .button{
+      width: 4rem;
+    }
+  }
+
+  @media (max-width:768px) {
+    body{
+      height: 100%;
+    }
+
+    header{
+      padding:10px;
+    }
+
+    .container{
+      width: 100%;
+      height: 80%;
+    }
+    .container_four_inputs{
+      display: flex;
+      flex-direction: column;
+    }
+    .picture{
+      height: 7rem;
+      width: 10rem;
+    }
+    .input{
+      width: 20rem;
+      height: 4rem;
+    }
+    .password_and_confirm_password_container{
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+    }
+    .button{
+      width: 4rem;
+    }
+  }
+
+  @media (max-width:1024px) {
+    body{
+      height: 100%;
+    }
+
+    header{
+      padding:10px;
+    }
+
+    .container{
+      width: 100%;
+      height: 80%;
+    }
+    .container_four_inputs{
+      display: flex;
+      flex-direction: column;
+    }
+    .picture{
+      height: 7rem;
+      width: 10rem;
+    }
+    .input{
+      width: 20rem;
+      height: 4rem;
+    }
+    .password_and_confirm_password_container{
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+    }
+    .button{
+      width: 4rem;
+    }
   }
