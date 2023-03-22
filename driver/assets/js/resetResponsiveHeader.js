@@ -13,6 +13,6 @@ window.addEventListener('resize', () => {
 
         header.remove()
         containerTest.appendChild(header)
-        console.log('teste')
+
     }
 })

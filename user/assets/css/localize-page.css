@@ -1,9 +1,11 @@
 .vanbora-title4{
     color: #E0B441;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.182);
 }
 
 .vanbora-title3{
     color: white;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.305);
 }
 
 .circle-container{

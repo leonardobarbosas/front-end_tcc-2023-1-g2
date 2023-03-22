@@ -1,0 +1,96 @@
+@import url(./reset.css);
+
+body{
+  background-color: #FFF5DA;
+  width: 100vw;
+  height: 90vh;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background-color: #FFEAAD;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+
+  height: 100%;
+  margin: 50px;
+}
+
+.back-container{
+  display: flex;
+  justify-content: end;
+  padding-right: 50px;
+}
+
+.back{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.content-container{
+  display: flex;
+  margin: 2vw;
+  justify-content: space-around;
+}
+
+#content{
+  background-color: #FFDD7B;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-left{
+  width: 40%;
+  font-size: 1.2rem;
+
+  padding: 2vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.content-right{
+  width: 40%;
+  font-size: 2rem;
+
+  padding: 2vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: space-around;
+  border: 0;
+  text-decoration: none;
+}
+
+
+#button{
+  height: 8vh;
+  width: 320px;
+  background: #FFDD7B;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+
+  font-size: 1.2rem;
+}
+
+#button:hover{
+  transform: scale(1.03);
+}
+
+.image-container{
+  padding-right: 50px;
+
+  display: flex;
+  justify-content: end;
+}

@@ -22,7 +22,16 @@ button {
 :root {
     --main-yellow: #E0B441;
     --text-color: #232323;
+    --background-perfil-van: #FAF4E3;
+    --contract-yellow:#FFDD7B;
 }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
 
 /*Logo css*/
 .ball{
