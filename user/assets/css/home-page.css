@@ -2,16 +2,14 @@
 
 body{
     background-color: #FFFCF2;
-;
 }
-
 
 .background{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.195), rgba(0, 0, 0, 0.166), rgba(0, 0, 0, 0)), url(../img/busbackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    height: 100vh;
+    height:  100vh;
 }
 
 header{
@@ -23,7 +21,19 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.nav-itens::after {
+    content: '';
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    animation: 1s mexer;
+     transition: 400ms all ease-in-out;
+  }
 
+  header nav .nav-itens:hover::after {
+    width: 100%;
+  }
 .name_logo_container{
     color: white;
 }
@@ -48,6 +58,7 @@ header{
 
 .vanbora-title{
     display: flex;
+   
 }
 
 #vanbora-title{
@@ -57,11 +68,14 @@ header{
 
 .vanbora-title1{
     color: #E0B441;
+  
 }
 
 .vanbora-title2{
     color: white;
+  
 }
+
 
 .vanbora-subtitle-mensage{
     color: white;

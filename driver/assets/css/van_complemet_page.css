@@ -181,6 +181,7 @@ input {
 
   main {
     flex-direction: column;
+    gap: 0;
   }
 
   header {
@@ -200,6 +201,79 @@ input {
 
 }
 
+@media (max-width:896px) {
+
+  main {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .input_picture_container{
+    margin-bottom: 0;
+  }
+  input{
+    height: 1rem;
+
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button_container{
+    margin-bottom: 20px;
+  }
+
+  .picture {
+      height: 7rem;
+      width: 10rem;
+  }
+
+}
+
+@media (max-width:414px) {
+
+  main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem;
+  }
+  .input_picture_container{
+    margin-bottom: 0;
+  }
+  input{
+    height: 1rem;
+
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button_container{
+    margin-bottom: 20px;
+  }
+
+  .picture {
+      height: 7rem;
+      width: 10rem;
+  }
+
+}
+
+
 
 @media (max-width:1024px) {
   body {
@@ -213,7 +287,7 @@ input {
 
 @media (max-width:375px) {
   header {
-    padding: 20px;
+    padding: 30px;
   }
 
   .picture {
@@ -229,6 +303,11 @@ input {
  }
 }
 
+@media (max-width:414px) {
+
+  
+}
+
 @media(max-width:667px) {
   main {
     height: 100%;
@@ -236,7 +315,7 @@ input {
 
   header {
     margin-top: 10px;
-    padding: 0;
+    padding: 10px;
   }
 
   .logo_container {
