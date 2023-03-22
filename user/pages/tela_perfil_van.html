@@ -8,55 +8,81 @@
   <script src="https://kit.fontawesome.com/2bbeedebb6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/reset.css">
   <link rel="stylesheet" href="../assets/css/perfil-van/perfil-van.css">
+  <script src="../assets/js/perfil-van/perfil-van.js" defer type="module"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <title>Tela de Perfil da Van</title>
 </head>
 
 <body>
+
   <header>
     <i class="fa-solid fa-xmark"></i>
   </header>
 
+
   <main>
-    <div class="infos-van">
-      <div class="div-name-driver">
-        <p class="name-driver">Wesley moura</p>
-      </div>
-      <div class="slide-dados">
-        <div class="slide-van">
-          <input type="text">
+    <section id="infos-driver">
+
+
+      <div class="infos-van">
+        <div class="div-name-driver">
+          <p class="name-driver">Wesley moura</p>
         </div>
-        <div class="div-dados-button">
-          <div class="div-dados-contact-driver">
-            <div>
-              <span>
-                Dados
-              </span>
-              <p>44 anos</p>
-              <p>3 vagas na van</p>
-              <p> SESI-OSASCO</p>
-              <p>12 anos de carreira</p>
-              <p>Voltar: A discutir</p>
-            </div>
-            <div>
-              <span>Contato</span>
-              <p>11 995696822</p>
-              <p>wesley@gmail.com</p>
-            </div>
-          </div>
-          <div class="buttons-about-contract">
-            <button class="button-about-me">
-              SOBRE MIM
+        <div class="slide-dados">
+          <div class="slide-van">
+            <button id="prev-button">
+              <i class="fa-solid fa-angle-right"></i>
             </button>
-            <button class="button-contract-me">
-              CONTRATAR
+            <div class="container-images">
+              <img src="../../image 21.png" alt="girl" class="slider on">
+              <img src="../../image 22.png" alt="girl" class="slider">
+            </div>
+            <button id="next-button">
+              <i class="fa-solid fa-angle-right"></i>
             </button>
           </div>
+          <div class="div-dados-button">
+            <div class="div-dados-contact-driver">
+              <div class="div-dados-driver">
+                <span>
+                  Dados
+                </span>
+                <p>44 anos</p>
+                <p>3 vagas na van</p>
+                <p> SESI-OSASCO</p>
+                <p>12 anos de carreira</p>
+                <p>Voltar: A discutir</p>
+              </div>
+              <div class="div-contact-driver">
+                <span>Contato</span>
+                <p>11 995696822</p>
+                <p>wesley@gmail.com</p>
+              </div>
+            </div>
+            <div class="buttons-about-contract">
+              <button class="button-about-me">
+                SOBRE MIM
+              </button>
+              <button class="button-contract-me">
+                CONTRATAR
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-    <div class="traco"></div>
-    <div class="coments"></div>
+      </div>
+    </section>
+    <section id="section-traco">
+      <div class="traco-separacao"></div>
+    </section>
+    <section id="section-comments">
+      <div class="coments">
+        <div class="first-comment">
+          <iconify-icon icon="material-symbols:subdirectory-arrow-right"></iconify-icon>
+          <p>Comentário principal</p>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 
