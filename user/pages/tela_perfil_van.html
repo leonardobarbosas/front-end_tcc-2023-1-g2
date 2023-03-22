@@ -6,56 +6,179 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/2bbeedebb6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'">
   <link rel="stylesheet" href="../assets/css/reset.css">
-  <link rel="stylesheet" href="../assets/css/perfil-van/perfil-van.css">
+  <link rel="stylesheet" href="../assets/css/perfil-van/body-header-main-perfil-van.css">
+  <link rel="stylesheet" href="../assets/css/perfil-van/coments-section.css">
+  <link rel="stylesheet" href="../assets/css/perfil-van/section-perfil-van.css">
+  <script src="../assets/js/perfil-van/perfil-van.js" defer type="module"></script>
   <title>Tela de Perfil da Van</title>
 </head>
 
 <body>
+
   <header>
     <i class="fa-solid fa-xmark"></i>
   </header>
 
+
   <main>
-    <div class="infos-van">
-      <div class="div-name-driver">
-        <p class="name-driver">Wesley moura</p>
-      </div>
-      <div class="slide-dados">
-        <div class="slide-van">
-          <input type="text">
+    <section id="infos-driver">
+
+
+      <div class="infos-van">
+        <div class="div-name-driver">
+          <p class="name-driver">Wesley moura</p>
         </div>
-        <div class="div-dados-button">
-          <div class="div-dados-contact-driver">
-            <div>
-              <span>
-                Dados
-              </span>
-              <p>44 anos</p>
-              <p>3 vagas na van</p>
-              <p> SESI-OSASCO</p>
-              <p>12 anos de carreira</p>
-              <p>Voltar: A discutir</p>
-            </div>
-            <div>
-              <span>Contato</span>
-              <p>11 995696822</p>
-              <p>wesley@gmail.com</p>
-            </div>
-          </div>
-          <div>
-            <button class="button-about-me">
-              <span>SOBRE MIM</span>
+        <div class="slide-dados">
+          <div class="slide-van">
+            <button id="prev-button">
+              <i class="fa-solid fa-angle-right"></i>
             </button>
-            <button class="contract-me">
-              <span>CONTRATAR</span>
+            <div class="container-images">
+              <img src="../../image 21.png" alt="girl" class="slider on">
+              <img src="../../image 22.png" alt="girl" class="slider">
+            </div>
+            <button id="next-button">
+              <i class="fa-solid fa-angle-right"></i>
             </button>
           </div>
+          <div class="div-dados-button">
+            <div class="div-dados-contact-driver">
+              <div class="div-dados-driver">
+                <span>
+                  Dados
+                </span>
+                <p>44 anos</p>
+                <p>3 vagas na van</p>
+                <p> SESI-OSASCO</p>
+                <p>12 anos de carreira</p>
+                <p>Voltar: A discutir</p>
+              </div>
+              <div class="div-contact-driver">
+                <span>Contato</span>
+                <p>11 995696822</p>
+                <p>wesley@gmail.com</p>
+              </div>
+            </div>
+            <div class="buttons-about-contract">
+              <button class="button-about-me">
+                SOBRE MIM
+              </button>
+              <button class="button-contract-me">
+                CONTRATAR
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="traco"></div>
-    <div class="coments"></div>
+      </div>
+    </section>
+    <section id="section-traco">
+      <div class="traco-separacao"></div>
+    </section>
+    <section id="section-comments">
+      <div class="coments">
+        <div class="first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+        <div class="answer-first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+        <div class="first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+        <div class="answer-first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+        <div class="first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+        <div class="answer-first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+        <div class="first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+        <div class="answer-first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+        <div class="first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+        <div class="answer-first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+        <div class="first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+        <div class="answer-first-comment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-comments" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m14 21l-1.4-1.425L16.175 16H5V4h2v10h9.175l-3.6-3.6L14 8.975L20 15l-6 6Z" />
+          </svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 
