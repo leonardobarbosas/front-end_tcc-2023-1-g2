@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, white 0, white 50%, var(--main-yellow) 50%);
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width: 1000px){
+    body{
+       background-image: none
+    }
+}

@@ -3,6 +3,7 @@
 const buttonReturn = document.querySelector('.button_van')
 const inputPicture = document.querySelector('.inpuct-picture-container')
 const picture = document.querySelector('.picture')
+const pictureImage = document.createElement('span')
 const buttonSave = document.querySelector('.button_edit')
 
 const editPerfil = ()=>{
@@ -32,7 +33,7 @@ const editPerfil = ()=>{
     picture.appendChild(i)
 
     
-    const pictureImage = document.createElement('span')
+    
     pictureImage.classList.add('picture__image')
 
     picture.appendChild(pictureImage)
@@ -58,8 +59,14 @@ const editPerfil = ()=>{
                 img.src = readerTarget.result
                 img.classList.add('picture__img')
 
-                picture
+                pictureImage.innerHTML = ""
+                i.style.display = 'none'
+                pictureImage.appendChild(img)
             })
+            reader.readAsDataURL(photo)
+        }else{
+            i.style.display = "block"
+            pictureImage.innerHTML = ""
         }
     })
 
@@ -77,6 +84,8 @@ const perfilNormal = ()=>{
     buttonSave.classList.remove('button_save')
     buttonSave.classList.add('button_edit')
     buttonSave.textContent = "Editar"
+
+    pictureImage.remove()
 }
 
 /* 

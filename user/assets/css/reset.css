@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +24,17 @@ button {
 :root {
     --main-yellow: #E0B441;
     --text-color: #232323;
+    --background-perfil-van: #FAF4E3;
+    --contract-yellow:#FFDD7B;
+    --button-yellow: #FFDA29;
 }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
 
 /*Logo css*/
 .ball{
