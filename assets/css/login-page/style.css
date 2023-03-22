@@ -1,35 +1,11 @@
-body {
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to right, white 0, white 50%, var(--main-yellow) 50%);
-    width: 100vw;
-    height: 100vh;
-}
 
-header{
-    display: flex;
-    padding-left: 20px;
-    width: 100vw;
-    height: 5vh;
-}
-
-.logo{
-    position: fixed;
-}
 
 .side{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-}
-
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
-    width: 100%;
 }
 
 .left-side {
@@ -142,4 +118,31 @@ i {
     text-decoration: none;
     color: black;
     font-weight: 600;
+}
+
+@media(max-width:1250px){
+    .register-form{
+        width: 80%;
+        height: auto;
+    }
+    .input{
+        width: auto;
+        height: auto;
+    }
+    .form-title{
+        font-size: 1.3rem;        
+    }
+}
+
+@media(max-width: 1000px){
+    .side{
+        flex-direction: column;
+    }
+    .entry-text{
+        display: none;
+    }
+    .google-register{
+        border-style: solid;
+        border-color: black;
+    }
 }
