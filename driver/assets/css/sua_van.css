@@ -1,0 +1,107 @@
+.vanbora-title4{
+    color: #E0B441;
+}
+
+.vanbora-title3{
+    color: white;
+}
+
+.circle1{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #E0B441;
+    clip-path: circle(1250px at left);
+}
+
+.circle-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle-rotate{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sua_van-container{
+    display: flex;
+    justify-content: center;
+}
+
+.van-title{
+    display: flex;
+    z-index: 100;
+}
+
+.localization-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: #FFDE72;
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+}
+
+.social-container{
+    display: flex;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    justify-content: center;
+}
+
+#wie-container{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.contact{
+    font-size: 3rem;
+}
+
+.copyright-container{
+    display: flex;
+    align-items: flex-end;
+
+    padding-bottom: 10px;
+}
+
+.copy{
+    font-size: 2rem;
+}
+
+.address-container{
+    display: flex;
+    width: 18vw;
+    align-items: center;
+}
+
+.address{
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 1291px){
+
+    .maps-container{
+        display: none;
+    }
+
+    .input-container{
+        width: 80%;
+    }
+
+}
