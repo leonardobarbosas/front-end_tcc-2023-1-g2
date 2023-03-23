@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFDD7B;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 95%;
+    height: 95%;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3rem 3.5rem;
+}
+
+.go_back_button_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e8c04a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e5b62c;
+}
+
+.main_title {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.contract_container {
+    border-radius: 10px;
+    width: 35%;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: white;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.10);
+}
+
+.img_container img {
+    border-radius: 10px;
+    width: 200px;
+    border: 1px solid #EF9F21;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.left_info {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+.left_info span {
+    font-weight: bold;
+}
+
+.left_info .nome {
+    font-size: x-large;
+}
+
+.right_info {
+    width: 10rem;
+    font-weight: bold;
+    height: 120px;
+}
+
+.cancel_button {
+    background-color: #D40000;
+    padding: 1.5rem 2rem;
+    border-radius: 30px;
+}

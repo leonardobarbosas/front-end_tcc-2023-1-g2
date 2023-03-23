@@ -1,0 +1,43 @@
+.coments{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.first-comment{
+  display: flex;
+  align-items: center;
+}
+
+.first-comment p{
+  font-family: 'Poppins';
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.icon-comments{
+  width: 50px;
+  height: 50px;
+}
+
+.answer-first-comment{
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.answer-first-comment p{
+  font-family: 'Poppins';
+
+  font-size: 1.1rem;
+  font-weight: 400;
+
+}
+
+.answer-first-comment svg{
+
+  width: 30px;
+  height: 30px;
+
+}
