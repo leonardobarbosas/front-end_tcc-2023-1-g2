@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/driver_view_contract.css">
+    <script src="../assets/js/driver_view_contract.js" defer type="module"></script>
     <script src="https://kit.fontawesome.com/2bbeedebb6.js" crossorigin="anonymous"></script>
     <title>Contratos</title>
 </head>
@@ -38,7 +39,18 @@
                 <div class="right_info">
                     <span class="endereco">Moradia: Rua espada, n 133, 06694-390, Itapevi - Jardim São Carlos</span>
                 </div>
-                <div class="cancel_button"><i class="fa-solid fa-xmark"></i></div>
+                <button type="button" id="button_cancel" class="cancel_button"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div id="modal_box" class="modal">
+                <div class="modal_container">
+                    <span>Você realmente deseja finalizar o contrato?</span>
+                    <div class="buttons_container">
+                        <button id="button_yes" class="button_modal" type="button">Sim</button>
+                        <button id="button_no" class="button_modal" type="button">Não</button>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
