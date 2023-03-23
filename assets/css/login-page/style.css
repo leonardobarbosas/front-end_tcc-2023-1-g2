@@ -137,6 +137,7 @@ i {
 @media(max-width: 1000px){
     .side{
         flex-direction: column;
+        gap: 20px;
     }
     .entry-text{
         display: none;
@@ -144,5 +145,14 @@ i {
     .google-register{
         border-style: solid;
         border-color: black;
+        font-size: 0.8rem;
+        padding: 1em;
+    }
+    i{
+        margin-right: 2em;
+    }
+    .right-side{
+        gap: 20px;
+        padding-bottom: 20px;
     }
 }
