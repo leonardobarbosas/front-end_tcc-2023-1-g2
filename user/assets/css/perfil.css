@@ -28,7 +28,6 @@ main{
 
 .back{
   font-size: 2rem;
-  font-weight: 700;
 }
 
 .main-content-container{
@@ -131,4 +130,70 @@ main{
 
 #button:hover{
   transform: scale(1.03);
+}
+
+@media (max-width: 1099px){
+  .back-container{
+    display: flex;
+    justify-content: center;
+    padding-right: 0vw;
+  }
+
+  #content-container{
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content-container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .informations-container{
+    width: 350px;
+  }
+
+  #text-main{
+    font-size: 1.7rem;
+  }
+
+  .text{
+    font-size: 1.5rem;
+  }
+
+  .image-perfil{
+    width: 350px;
+    height: 350px;
+  }
+
+  #separation{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .description-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description-container{
+    width: 350px;
+  }
+
+  .description{
+    font-size: 1.3rem;
+  }
+
+  .buttons-container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 15px;
+  }
 }
