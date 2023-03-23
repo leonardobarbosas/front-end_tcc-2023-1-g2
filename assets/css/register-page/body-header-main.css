@@ -35,6 +35,7 @@ main {
         flex-direction: column-reverse;
         width: auto;
         height: auto;
+        gap: 30px;
     }
     body{
         background-image: none;
