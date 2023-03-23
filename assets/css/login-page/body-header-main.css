@@ -27,4 +27,11 @@ main{
     body{
        background-image: none
     }
+    header{
+        position: relative;
+    }
+    main{
+        width: auto;
+        height: auto;
+    }
 }

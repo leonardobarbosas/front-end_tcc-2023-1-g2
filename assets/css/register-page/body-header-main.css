@@ -1,0 +1,46 @@
+body {
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(to right, var(--main-yellow) 0, var(--main-yellow) 50%, white 50%);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/********* HEADER *********/
+header{
+    display: flex;
+    position: fixed;
+    justify-content: end;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.logo_container {
+    display: flex;
+}
+
+.logo {
+    width: 14rem;
+}
+
+/********* MAIN *********/
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+@media(max-width: 1000px){
+    main{
+        flex-direction: column-reverse;
+        width: auto;
+        height: auto;
+    }
+    body{
+        background-image: none;
+    }
+    header{
+        position: relative;
+        justify-content: start;
+    }
+}
