@@ -132,3 +132,29 @@ main{
 #button:hover{
   transform: scale(1.03);
 }
+
+@media (max-width: 1099px){
+  .main-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .informations-container{
+    width: 400px;
+  }
+
+  #text-main{
+    font-size: 2rem;
+  }
+
+  .text{
+    font-size: 1.5rem;
+  }
+
+  .description-content-container{
+    
+  }
+}

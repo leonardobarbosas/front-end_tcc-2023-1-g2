@@ -96,3 +96,9 @@ main{
   display: flex;
   justify-content: end;
 }
+
+@media (max-width: 778px) {
+  .div-container{
+    background-color: #FFF5DA
+  }
+}
