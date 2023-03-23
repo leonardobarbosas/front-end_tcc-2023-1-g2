@@ -29,7 +29,6 @@ main{
 
 .back{
   font-size: 2rem;
-  font-weight: 700;
 }
 
 .content-container{
@@ -97,8 +96,69 @@ main{
   justify-content: end;
 }
 
-@media (max-width: 778px) {
+@media (max-width: 1099px) {
+  body{
+    height: auto;
+
+    background-color: #FFF5DA;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  main{
+    background-color: #FFF5DA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    margin: 0px;
+  }
+
+  .back-container{
+    display: flex;
+    justify-content: center;
+    padding-right: 0px;
+  }
+
   .div-container{
-    background-color: #FFF5DA
+    padding-top: 15px;
+    background-color: #FFF5DA;
+  }
+
+  .content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0vw;
+    gap: 2vh;
+  }
+
+  .content-right-font{
+    font-size: 1.6rem;
+  }
+
+  .content-left{
+    width: 40%;
+    font-size: 1.2rem;
+    padding: 0vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  #content{
+    width: 340px;
+  }
+
+  .image-container{
+    padding-right: 0px;
+  
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttons-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
